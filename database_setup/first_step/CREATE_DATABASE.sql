@@ -1,1 +1,0 @@
-CREATE DATABASE formula_one;
