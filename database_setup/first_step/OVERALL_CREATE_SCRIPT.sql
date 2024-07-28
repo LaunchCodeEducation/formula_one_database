@@ -1,6 +1,9 @@
+-- MAKE SURE to run this while connected to the new dbo
+CREATE DATABASE formula_one
+GO
 
-CREATE DATABASE formula_one;
-GO;
+USE formula_one
+GO
 
 SET
     ANSI_NULLS ON
@@ -32,7 +35,7 @@ ADD
         ALLOW_ROW_LOCKS = ON,
         ALLOW_PAGE_LOCKS = ON
     ) ON [PRIMARY]
-GO;
+GO
 
 SET
     ANSI_NULLS ON
@@ -60,7 +63,7 @@ ADD
         ALLOW_ROW_LOCKS = ON,
         ALLOW_PAGE_LOCKS = ON
     ) ON [PRIMARY]
-GO;
+GO
 
 SET
     ANSI_NULLS ON
@@ -90,7 +93,7 @@ ADD
         ALLOW_ROW_LOCKS = ON,
         ALLOW_PAGE_LOCKS = ON
     ) ON [PRIMARY]
-GO;
+GO
 
 SET
     ANSI_NULLS ON
@@ -118,7 +121,7 @@ ADD
         ALLOW_ROW_LOCKS = ON,
         ALLOW_PAGE_LOCKS = ON
     ) ON [PRIMARY]
-GO;
+GO
 
 SET
     ANSI_NULLS ON
@@ -148,7 +151,7 @@ ADD
         ALLOW_ROW_LOCKS = ON,
         ALLOW_PAGE_LOCKS = ON
     ) ON [PRIMARY]
-GO;
+GO
 
 SET
     ANSI_NULLS ON
@@ -180,7 +183,7 @@ ADD
         ALLOW_ROW_LOCKS = ON,
         ALLOW_PAGE_LOCKS = ON
     ) ON [PRIMARY]
-GO;
+GO
 
 SET
     ANSI_NULLS ON
@@ -196,7 +199,7 @@ GO
         [time] [nvarchar](50) NOT NULL,
         [milliseconds] [int] NOT NULL
     ) ON [PRIMARY]
-GO;
+GO
 
 SET
     ANSI_NULLS ON
@@ -213,7 +216,7 @@ GO
         [duration] [nvarchar](50) NOT NULL,
         [milliseconds] [int] NOT NULL
     ) ON [PRIMARY]
-GO;
+GO
 
 
 SET
@@ -246,7 +249,7 @@ ADD
         ALLOW_ROW_LOCKS = ON,
         ALLOW_PAGE_LOCKS = ON
     ) ON [PRIMARY]
-GO;
+GO
 
 SET
     ANSI_NULLS ON
@@ -287,7 +290,7 @@ ADD
         ALLOW_ROW_LOCKS = ON,
         ALLOW_PAGE_LOCKS = ON
     ) ON [PRIMARY]
-GO;
+GO
 
 SET
     ANSI_NULLS ON
@@ -328,7 +331,7 @@ ADD
         ALLOW_ROW_LOCKS = ON,
         ALLOW_PAGE_LOCKS = ON
     ) ON [PRIMARY]
-GO;
+GO
 
 SET
     ANSI_NULLS ON
@@ -340,7 +343,7 @@ GO
         [year] [int] NOT NULL,
         [url] [nvarchar](100) NOT NULL
     ) ON [PRIMARY]
-GO;
+GO
 
 SET
     ANSI_NULLS ON
@@ -379,7 +382,7 @@ ADD
         ALLOW_ROW_LOCKS = ON,
         ALLOW_PAGE_LOCKS = ON
     ) ON [PRIMARY]
-GO;
+GO
 
 SET
     ANSI_NULLS ON
@@ -404,4 +407,4 @@ ADD
         ALLOW_ROW_LOCKS = ON,
         ALLOW_PAGE_LOCKS = ON
     ) ON [PRIMARY]
-GO;
+GO

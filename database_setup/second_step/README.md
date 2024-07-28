@@ -17,6 +17,44 @@ Using each .csv file, create a temp table for it using the Import wizard.
 2. ALLOW NULLS FOR EVERY FIELD
 3. MAKE SURE THE SELECTED DATATYPES FOR EACH FIELD MATCH THE ONES USED IN EACH TABLES CREATE_TABLE SCRIPTS FROM THE LAST OVERALL STEP
 
+### Data types for each table:
+
+Table - circuits
+```
+CREATE TABLE [dbo].[circuits](
+        [circuitId] [int] NOT NULL,
+        [circuitRef] [nvarchar](50) NOT NULL,
+        [name] [nvarchar](50) NOT NULL,
+        [location] [nvarchar](50) NOT NULL,
+        [country] [nvarchar](50) NOT NULL,
+        [lat] [float] NOT NULL,
+        [lng] [float] NOT NULL,
+        [alt] [smallint] NOT NULL,
+        [url] [nvarchar](100) NULL
+	) ON [PRIMARY]
+```
+
+Table - constructor_results
+```
+CREATE TABLE [dbo].[constructor_results](
+        [constructorResultsId] [int] NOT NULL,
+        [raceId] [int] NOT NULL,
+        [constructorId] [int] NOT NULL,
+        [points] [float] NOT NULL,
+        [status] [nvarchar](50) NOT NULL
+    ) ON [PRIMARY]
+```
+
+Table
+
 ## Step Two
 Run each of the Sql files in the 'step_two' folder.
 These files WILL DELETE the temp tables we created in Step One
+
+
+
+
+
+
+
+
