@@ -1,5 +1,4 @@
-INSERT INTO
-    dbo.circuits (
+INSERT INTO dbo.circuits (
         [circuitId],
         [circuitRef],
         [name],
@@ -10,8 +9,7 @@ INSERT INTO
         [alt],
         [url]
     )
-VALUES
-    (
+VALUES (
         1,
         N'albert_park',
         N'Albert Park Grand Prix Circuit',
@@ -91,13 +89,13 @@ VALUES
     (
         8,
         N'magny_cours',
-        N 'Circuit de Nevers Magny-Cours',
+        N'Circuit de Nevers Magny-Cours',
         N'Magny Cours',
         N'France',
         46.8642,
         3.16361,
         228,
-        N 'http://en.wikipedia.org/wiki/Circuit_de_Nevers_Magny-Cours'
+        N'http://en.wikipedia.org/wiki/Circuit_de_Nevers_Magny-Cours'
     ),
     (
         9,
@@ -157,13 +155,13 @@ VALUES
     (
         14,
         N'monza',
-        N 'Autodromo Nazionale di Monza',
+        N'Autodromo Nazionale di Monza',
         N'Monza',
         N'Italy',
         45.6156,
         9.28111,
         162,
-        N 'http://en.wikipedia.org/wiki/Autodromo_Nazionale_Monza'
+        N'http://en.wikipedia.org/wiki/Autodromo_Nazionale_Monza'
     ),
     (
         15,
@@ -223,13 +221,13 @@ VALUES
     (
         20,
         N'nurburgring',
-        N 'Nürburgring',
-        N 'Nürburg',
+        N'Nürburgring',
+        N'Nürburg',
         N'Germany',
         50.3356,
         6.9475,
         578,
-        N 'http://en.wikipedia.org/wiki/N%C3%BCrburgring'
+        N'http://en.wikipedia.org/wiki/N%C3%BCrburgring'
     ),
     (
         21,
@@ -388,13 +386,13 @@ VALUES
     (
         36,
         N'jacarepagua',
-        N 'Autódromo Internacional Nelson Piquet',
+        N'Autódromo Internacional Nelson Piquet',
         N'Rio de Janeiro',
         N'Brazil',
         -22.9756,
         -43.395,
         1126,
-        N 'http://en.wikipedia.org/wiki/Aut%C3%B3dromo_Internacional_Nelson_Piquet'
+        N'http://en.wikipedia.org/wiki/Aut%C3%B3dromo_Internacional_Nelson_Piquet'
     ),
     (
         37,
@@ -423,7 +421,7 @@ VALUES
         N'zandvoort',
         N'Circuit Park Zandvoort',
         N'Zandvoort',
-        N 'Netherlands',
+        N'Netherlands',
         52.3888,
         4.54092,
         6,
@@ -477,7 +475,7 @@ VALUES
         44,
         N'las_vegas',
         N'Las Vegas Street Circuit',
-        N 'Nevada',
+        N'Nevada',
         N'USA',
         36.1162,
         -115.174,
@@ -499,7 +497,7 @@ VALUES
         46,
         N'watkins_glen',
         N'Watkins Glen',
-        N 'New York State',
+        N'New York State',
         N'USA',
         42.3369,
         -76.9272,
@@ -542,13 +540,13 @@ VALUES
     (
         50,
         N'nivelles',
-        N 'Nivelles-Baulers',
+        N'Nivelles-Baulers',
         N'Brussels',
         N'Belgium',
         50.6211,
         4.32694,
         139,
-        N 'http://en.wikipedia.org/wiki/Nivelles-Baulers'
+        N'http://en.wikipedia.org/wiki/Nivelles-Baulers'
     ),
     (
         51,

@@ -1,13 +1,11 @@
-INSERT INTO
-    dbo.constructors (
+INSERT INTO dbo.constructors (
         [constructorId],
         [constructorRef],
         [name],
         [nationality],
         [url]
     )
-VALUES
-    (
+VALUES (
         1,
         N'mclaren',
         N'McLaren',
@@ -543,7 +541,7 @@ VALUES
         78,
         N'amon',
         N'Amon',
-        N 'New Zealander',
+        N'New Zealander',
         N'http://en.wikipedia.org/wiki/Amon_(Formula_One_team)'
     ),
     (
@@ -696,9 +694,9 @@ VALUES
     (
         100,
         N'enb',
-        N 'ENB',
+        N'ENB',
         N'Belgian',
-        N 'http://en.wikipedia.org/wiki/Ecurie_Nationale_Belge'
+        N'http://en.wikipedia.org/wiki/Ecurie_Nationale_Belge'
     ),
     (
         101,
@@ -962,9 +960,9 @@ VALUES
     (
         138,
         N'nichels',
-        N 'Nichels',
+        N'Nichels',
         N'American',
-        N 'http://en.wikipedia.org/wiki/Nichels'
+        N'http://en.wikipedia.org/wiki/Nichels'
     ),
     (
         139,
@@ -1032,9 +1030,9 @@ VALUES
     (
         148,
         N'frazer_nash',
-        N 'Frazer Nash',
+        N'Frazer Nash',
         N'British',
-        N 'http://en.wikipedia.org/wiki/Frazer_Nash'
+        N'http://en.wikipedia.org/wiki/Frazer_Nash'
     ),
     (
         149,
