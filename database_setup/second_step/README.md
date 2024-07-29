@@ -8,7 +8,7 @@ This extension will allow you to import .csv files into your database using Azur
 We are going to import this data into temporary tables, use these tables to do a SELECT * Insert statement, and then delete these temporary tables.
 
 Each of the existing db table names matches the .csv file name.
-So, their temp table naming will follow this format: `TEMP_tableName`.
+So, their temp table naming will follow this format: `temp_tableName`.
 Please refer to the TEMP table naming style in the step_two INSERT files to make sure you put in the proper TEMP table name.
 
 ## Step One
@@ -224,8 +224,16 @@ CREATE TABLE [dbo].[status](
 ```
 
 ## Step Two
-Run each of the Sql files in the 'step_two' folder.
-These files WILL DELETE the temp tables we created in Step One
+Run the INSERT_DATA_FROM_TEMP sql in Azure Data Studio.
+This SQL will insert all the data from the temp tables into the proper tables.
+DO NOT RUN THIS SQL AS A WHOLE AGAIN! It will reimport all that data and cause issues on the table.
+If you accidentally do this, I would suggest clearing the data from the permanent table using the `DELETE FROM` keyword without a WHERE condition. 
+Then run the relevant `INSERT INTO` command for that table again.
+
+## Step Three
+MAKE SURE THE PREVIOUS INSERT FROM OPERATIONS COMPLETED SUCCESSFULLY FOR EVERY TABLE.
+If Step Two was successful, now run the DROP_TEMP_TABLES sql in Azure Data Studio.
+BE AWARE: You cannot undo a DROP TABLE action. SO MAKE SURE your temp table data was successfully inserted into the permanent table during the previous step before running this sql.
 
 
 
