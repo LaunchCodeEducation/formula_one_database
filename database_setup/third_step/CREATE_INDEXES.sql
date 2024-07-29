@@ -15,7 +15,7 @@ CREATE INDEX idx_construct_stand_position
 ON constructor_standings (position);
 
 CREATE INDEX idx_construct_stand_position_text
-ON constructor_standings (position_text);
+ON constructor_standings (positionText);
 
 -- drivers
 CREATE INDEX idx_driver_name
@@ -29,7 +29,7 @@ CREATE INDEX idx_driver_standings_position
 ON driver_standings (position);
 
 CREATE INDEX idx_driver_standings_position_text
-ON driver_standings (position_text);
+ON driver_standings (positionText);
 
 CREATE INDEX idx_driver_standings_wins
 ON driver_standings (wins);
@@ -46,71 +46,71 @@ ON lap_times (milliseconds);
 
 -- pit_stops
 CREATE INDEX idx_pit_stop_stop
-ON lap_times (stop);
+ON pit_stops (stop);
 
 CREATE INDEX idx_pit_stop_lap
-ON lap_times (lap);
+ON pit_stops (lap);
 
 CREATE INDEX idx_pit_stop_duration
-ON lap_times (duration);
+ON pit_stops (duration);
 
 CREATE INDEX idx_pit_stop_millisec
-ON lap_times (milliseconds);
+ON pit_stops (milliseconds);
 
 -- qualifying
 CREATE INDEX idx_qualifying_q1
-ON lap_times (q1);
+ON qualifying (q1);
 
 CREATE INDEX idx_qualifying_q2
-ON lap_times (q2);
+ON qualifying (q2);
 
 CREATE INDEX idx_qualifying_q3
-ON lap_times (q3);
+ON qualifying (q3);
 
 CREATE INDEX idx_qualifying_position
-ON lap_times (position);
+ON qualifying (position);
 
 -- races
 CREATE INDEX idx_races_name
-ON lap_times (name);
+ON races (name);
 
 -- results
 CREATE INDEX idx_results_points
-ON lap_times (points);
+ON results (points);
 
 CREATE INDEX idx_results_laps
-ON lap_times (laps);
+ON results (laps);
 
 CREATE INDEX idx_results_millisec
-ON lap_times (milliseconds);
+ON results (milliseconds);
 
 CREATE INDEX idx_results_fastest_lap
-ON lap_times (fastest_lap);
+ON results (fastestLap);
 
 CREATE INDEX idx_results_fastest_lap_time
-ON lap_times (fastestLapTime);
+ON results (fastestLapTime);
 
 CREATE INDEX idx_results_fastest_lap_speed
-ON lap_times (fastestLapSpeed);
+ON results (fastestLapSpeed);
 
 CREATE INDEX idx_results_rank
-ON lap_times (rank);
+ON results (rank);
 
 -- sprint_results
 CREATE INDEX idx_sprint_results_points
-ON lap_times (points);
+ON sprint_results (points);
 
 CREATE INDEX idx_sprint_results_laps
-ON lap_times (laps);
+ON sprint_results (laps);
 
 CREATE INDEX idx_sprint_results_millisec
-ON lap_times (milliseconds);
+ON sprint_results (milliseconds);
 
 CREATE INDEX idx_sprint_results_fastest_lap
-ON lap_times (fastest_lap);
+ON sprint_results (fastestLap);
 
 CREATE INDEX idx_sprint_results_fastest_lap_time
-ON lap_times (fastestLapTime);
+ON sprint_results (fastestLapTime);
 
 -- status
 CREATE INDEX idx_status_name
